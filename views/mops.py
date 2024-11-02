@@ -5,6 +5,9 @@ from menu_functions import menu
 from budget_functions import mops_budget
 from menu_functions import mops_menu
 
+if 'data' not in st.session_state:
+    st.switch_page('views/home.py')
+
 menu4, numbers4 = mops_menu()
 
 level4 = st.selectbox('Choose Organization', options=menu4, index=None)

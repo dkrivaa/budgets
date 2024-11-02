@@ -5,7 +5,8 @@ from menu_functions import menu
 from budget_functions import mops_budget
 from menu_functions import mops_menu
 
-menu4, numbers4 = mops_menu()
+if 'data' in st.session_state:
+    menu4, numbers4 = mops_menu()
 
 level4 = st.selectbox('Choose Organization', options=menu4, index=None)
 st.write('---')

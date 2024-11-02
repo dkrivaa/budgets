@@ -25,7 +25,7 @@ mops_page = st.Page(
 pg = st.navigation(pages={
     'Home': [home_page],
     'Budgets': [ministries_page, ],
-    'MOPS': [mops_page],
+    'MOPS': [mops_page, ],
 })
 # Run navigation function
 pg.run()

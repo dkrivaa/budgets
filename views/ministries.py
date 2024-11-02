@@ -4,6 +4,9 @@ import pandas as pd
 from menu_functions import menu
 from budget_functions import get_budget
 
+if 'data' not in st.session_state:
+    st.switch_page('views/home.py')
+
 # Getting the menus for the different levels
 menu1, numbers1 = menu(1)
 level1 = st.selectbox('Ministry Group', options=menu1, index=None)
